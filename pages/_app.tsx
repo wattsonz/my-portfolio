@@ -10,6 +10,13 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+  background-color: black;
+  /* min-height: 100vh; */
+  font-family: 'Comfortaa', cursive;  
+  /* -webkit-tap-highlight-color: transparent; */
+}
 `
 
 const Container = styled.div`
@@ -25,11 +32,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <GlobalStyle />
-      <Container>
-        <Provider store={store}>
-          <Component {...pageProps} />
-        </Provider>
-      </Container>
+      {/* <Container> */}
+      {/* <Provider store={store}> */}
+      <Component {...pageProps} />
+      {/* </Provider> */}
+      {/* </Container> */}
     </>
   )
 }
