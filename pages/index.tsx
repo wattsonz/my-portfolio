@@ -1,7 +1,8 @@
 import styled from 'styled-components'
-import { useEffect, useState } from 'react'
+// import { useEffect, useState } from 'react'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import { useTransition, animated, config } from '@react-spring/web'
+// import { useTransition, animated, config } from '@react-spring/web'
+import Head from 'next/head'
 
 type Props = {}
 
@@ -137,6 +138,9 @@ export default function Home({ }: Props) {
 
   return (
     <>
+      <Head>
+        <title>wattson | Blog & Article</title>
+      </Head>
       <Div>
         <Parallax pages={8.7}>
           <ParallaxLayer

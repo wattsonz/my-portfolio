@@ -1,8 +1,8 @@
 import type { AppProps } from 'next/app'
-import { Provider } from 'react-redux'
+// import { Provider } from 'react-redux'
 import styled, { createGlobalStyle } from 'styled-components'
 
-import { store } from '../slices/index'
+// import { store } from '../slices/index'
 
 const GlobalStyle = createGlobalStyle`
 * {
