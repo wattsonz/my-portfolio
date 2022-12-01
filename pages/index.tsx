@@ -274,7 +274,7 @@ export default function Home({ }: Props) {
               <a>{`it's me "wattson"`}</a>
             </div>
             <span className="button-resume">
-              <a href="https://drive.google.com/file/d/1zAxa1gpqZC-VQcUqB8mxtlV3-TeBBdvl/view?usp=sharing" target="_blank">resume</a>
+              <a href="https://drive.google.com/file/d/1D9npNUxZ6S_dG6_f4ADhQkCjsXbjwaOS/view?usp=sharing" target="_blank">resume</a>
             </span>
             <span className="button">
               <a href="https://github.com/wattsonz" target="_blank">github</a>
