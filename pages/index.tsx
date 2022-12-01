@@ -132,6 +132,60 @@ const Div = styled.div`
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
+
+.button-resume {
+    position:relative;
+    display:inline-block;
+    margin:20px;
+  }
+
+  .button-resume a{
+  color:white;
+  font-weight:bold;
+  font-size:36px;
+  text-align: center;
+  text-decoration:none;
+  background-color:#00de90;
+  display:block;
+  position:relative;
+  padding:20px 40px;
+  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: -1px 3px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+  -webkit-box-shadow:inset 0 1px 0 #8ccdb4, 0 10px 0 #009a76;
+  -moz-box-shadow:inset 0 1px 0 #8ccdb4, 0 10px 0 #009a76;
+  box-shadow:inset 0 1px 0 #8ccdb4, 0 10px 0 #009a76;
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button-resume a:active{
+  top:10px;
+  background-color:#00de90;
+  
+  -webkit-box-shadow:inset 0 1px 0 #8ccdb4, inset 0 -3px 0 #009a76;
+  -moz-box-shadow:inset 0 1px 0 #8ccdb4, inset 0 -3pxpx 0 #009a76;
+  box-shadow:inset 0 1px 0 #8ccdb4, inset 0 -3px 0 #009a76;
+}
+
+.button-resume:after{
+  content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+  position: absolute;
+  bottom:-15px;
+  left:-4px;
+  z-index:-1;
+  background-color:#2B1800;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
 `
 
 export default function Home({ }: Props) {
@@ -139,7 +193,7 @@ export default function Home({ }: Props) {
   return (
     <>
       <Head>
-        <title>wattson | Blog & Article</title>
+        <title>wattson | Portfolio</title>
       </Head>
       <Div>
         <Parallax pages={8.7}>
@@ -219,9 +273,12 @@ export default function Home({ }: Props) {
             <div className="label">
               <a>{`it's me "wattson"`}</a>
             </div>
-            <div className="button">
+            <span className="button-resume">
+              <a href="https://drive.google.com/file/d/1h1W3B4W1_ulFuc7ROZTS40l0zxNPZGsc/view?usp=sharing" target="_blank">resume</a>
+            </span>
+            <span className="button">
               <a href="https://github.com/wattsonz" target="_blank">github</a>
-            </div>
+            </span>
           </ParallaxLayer>
         </Parallax>
       </Div>
