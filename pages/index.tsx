@@ -238,6 +238,8 @@ export default function Home({ }: Props) {
             offset={0.2}
             speed={0.05}
           >
+            <br />
+            <h1> . . .</h1>
             <h4>Woraphrot Wattanaburinkul</h4>
           </ParallaxLayer>
 
