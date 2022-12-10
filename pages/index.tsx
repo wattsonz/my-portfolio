@@ -193,7 +193,7 @@ export default function Home({ }: Props) {
   return (
     <>
       <Head>
-        <title>wattson | Portfolio</title>
+        <title>wattson world</title>
       </Head>
       <Div>
         <Parallax pages={8.7}>
