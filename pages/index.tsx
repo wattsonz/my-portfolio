@@ -238,8 +238,6 @@ export default function Home({ }: Props) {
             offset={0.2}
             speed={0.05}
           >
-            <h2>Hi,</h2> <h3> I'm </h3>
-
             <h4>Woraphrot Wattanaburinkul</h4>
           </ParallaxLayer>
 
@@ -271,10 +269,10 @@ export default function Home({ }: Props) {
             speed={0.05}
           >
             <div className="label">
-              <a>{`it's me "wattson"`}</a>
+              <a>{`"wattson"`}</a>
             </div>
             <span className="button-resume">
-              <a href="https://drive.google.com/file/d/1D9npNUxZ6S_dG6_f4ADhQkCjsXbjwaOS/view?usp=sharing" target="_blank">resume</a>
+              <a href="https://drive.google.com/file/d/1GXgoYJvvw-EyusMRkVIYIiXWQhdIBbd2/view?usp=sharing" target="_blank">resume</a>
             </span>
             <span className="button">
               <a href="https://github.com/wattsonz" target="_blank">github</a>
