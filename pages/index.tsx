@@ -1,10 +1,18 @@
-import styled from 'styled-components'
-// import { useEffect, useState } from 'react'
+import styled, { createGlobalStyle } from 'styled-components'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-// import { useTransition, animated, config } from '@react-spring/web'
 import Head from 'next/head'
 
 type Props = {}
+
+const GlobalStyle = createGlobalStyle`
+
+body {
+  background-color: black;
+  /* min-height: 100vh; */
+  font-family: 'Comfortaa', cursive;  
+  /* -webkit-tap-highlight-color: transparent; */
+}
+`
 
 const Div = styled.div`
   /* flex: 1;
@@ -186,12 +194,175 @@ const Div = styled.div`
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
+
+.button-resume {
+    position:relative;
+    display:inline-block;
+    margin:20px;
+  }
+
+  .button-resume a{
+  color:white;
+  font-weight:bold;
+  font-size:36px;
+  text-align: center;
+  text-decoration:none;
+  background-color:#00de90;
+  display:block;
+  position:relative;
+  padding:20px 40px;
+  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: -1px 3px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+  -webkit-box-shadow:inset 0 1px 0 #8ccdb4, 0 10px 0 #009a76;
+  -moz-box-shadow:inset 0 1px 0 #8ccdb4, 0 10px 0 #009a76;
+  box-shadow:inset 0 1px 0 #8ccdb4, 0 10px 0 #009a76;
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button-resume a:active{
+  top:10px;
+  background-color:#00de90;
+  
+  -webkit-box-shadow:inset 0 1px 0 #8ccdb4, inset 0 -3px 0 #009a76;
+  -moz-box-shadow:inset 0 1px 0 #8ccdb4, inset 0 -3pxpx 0 #009a76;
+  box-shadow:inset 0 1px 0 #8ccdb4, inset 0 -3px 0 #009a76;
+}
+
+.button-resume:after{
+  content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+  position: absolute;
+  bottom:-15px;
+  left:-4px;
+  z-index:-1;
+  background-color:#2B1800;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button-app {
+    position:relative;
+    display:inline-block;
+    margin:20px;
+  }
+
+  .button-app a{
+  color:white;
+  font-weight:bold;
+  font-size:36px;
+  text-align: center;
+  text-decoration:none;
+  background-color:#de9f00;
+  display:block;
+  position:relative;
+  padding:20px 40px;
+  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: -1px 3px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+  -webkit-box-shadow:inset 0 1px 0 #cdcb8c, 0 10px 0 #b28000;
+  -moz-box-shadow:inset 0 1px 0 #cdcb8c, 0 10px 0 #b28000;
+  box-shadow:inset 0 1px 0 #cdcb8c, 0 10px 0 #b28000;
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button-app a:active{
+  top:10px;
+  background-color:#de9f00;
+  
+  -webkit-box-shadow:inset 0 1px 0 #cdcb8c, inset 0 -3px 0 #b28000;
+  -moz-box-shadow:inset 0 1px 0 #cdcb8c, inset 0 -3pxpx 0 #b28000;
+  box-shadow:inset 0 1px 0 #cdcb8c, inset 0 -3px 0 #b28000;
+}
+
+.button-app:after{
+  content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+  position: absolute;
+  bottom:-15px;
+  left:-4px;
+  z-index:-1;
+  background-color:#2B1800;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button-app {
+    position:relative;
+    display:inline-block;
+    margin:20px;
+  }
+
+  .button-app a{
+  color:white;
+  font-weight:bold;
+  font-size:36px;
+  text-align: center;
+  text-decoration:none;
+  background-color:#de9f00;
+  display:block;
+  position:relative;
+  padding:20px 40px;
+  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: -1px 3px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+  -webkit-box-shadow:inset 0 1px 0 #cdcb8c, 0 10px 0 #b28000;
+  -moz-box-shadow:inset 0 1px 0 #cdcb8c, 0 10px 0 #b28000;
+  box-shadow:inset 0 1px 0 #cdcb8c, 0 10px 0 #b28000;
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button-app a:active{
+  top:10px;
+  background-color:#de9f00;
+  
+  -webkit-box-shadow:inset 0 1px 0 #cdcb8c, inset 0 -3px 0 #b28000;
+  -moz-box-shadow:inset 0 1px 0 #cdcb8c, inset 0 -3pxpx 0 #b28000;
+  box-shadow:inset 0 1px 0 #cdcb8c, inset 0 -3px 0 #b28000;
+}
+
+.button-app:after{
+  content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+  position: absolute;
+  bottom:-15px;
+  left:-4px;
+  z-index:-1;
+  background-color:#2B1800;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
 `
 
-export default function Home({ }: Props) {
+export default function Intro({ }: Props) {
 
   return (
     <>
+      <GlobalStyle />
       <Head>
         <title>wattson world</title>
       </Head>
@@ -278,6 +449,9 @@ export default function Home({ }: Props) {
             </span>
             <span className="button">
               <a href="https://github.com/wattsonz" target="_blank">github</a>
+            </span>
+            <span className="button-app">
+              <a href="https://scalar-app.vercel.app/" target="_blank">{'Shop App ->'}</a>
             </span>
           </ParallaxLayer>
         </Parallax>
